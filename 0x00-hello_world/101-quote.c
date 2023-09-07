@@ -2,13 +2,10 @@
 /**
  * main - prints a quote
  * Return: if fail return 1
- */
-int main(void)
+ */	
+int write(int filedes, const char *buf, unsigned int nbyte);
+int main( int argc, char** argv )
 	{
-	char q[] = "and that piece of art is useful\" Dora korpar, 2015-10-19";
-	FILE *file = fopen("myfile.txt", "W");
-	fwrite(q, 1, sizeof(q), file);
-	char buffer[sizeof(q)];
-	fread(buffer[sizeof(buffer), file);
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 55);
 	return (1);
 	}
