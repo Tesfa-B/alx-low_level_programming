@@ -1,14 +1,20 @@
 #include <stdio.h>
+/**
+ * main - list the size of types
+ * Return - if success return 0
+ */
 int main(void)
 	{
-		printf(sizeofchar()
-		prinf(sizeof(int))
-		printf(sizeof(long int))
-		printf(sizeof(long long))
-		printf(sizeof(float))
-		
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
 
-		return 0;
-		
-
+	printf("Size of a char: %lu.\n",(unsigned long)sizeof(a));
+	printf("Size of an int: %lu.\n",(unsigned long) sizeof(b));
+	printf("Size of a long int: %lu.\n",(unsigned long) sizeof(c));
+	printf("Size of a long long int: %lu.\n",(unsigned long) sizeof(d));
+	printf("Size of a float: %lu.\n.",(unsigned long) sizeof(e));
+	return (0);
 	}
