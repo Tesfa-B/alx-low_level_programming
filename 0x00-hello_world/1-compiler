@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c Export CFILE=1-main.c -o Export CFILE=1-main.o
+gcc -c CFILE=1-main.c -o main.o
