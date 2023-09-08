@@ -1,22 +1,23 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+
 /**
- * main -  checks the random  numbers last digit if its greater than 5 or less than 5, 0  
- * Return: If success return 0
+ * main - checks the last digit of the number and compare it to 5,0,6
+ * last_digit - divides the number by 10
+ * Return:If success return 0
+ * 6 and 0 or equals to zero
  */
 int main(void)
 {
 	int n;
+	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	int last_digit = n % 10;
 
+	last_digit = n % 10;
 	if (n > 5)
 	{
 		printf("Last digit of %d is %d  greater than 5\n", n, last_digit);
