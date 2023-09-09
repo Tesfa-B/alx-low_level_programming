@@ -5,8 +5,12 @@
  */
 int main(void)
 {
-	int i:
-		i = 0;
-	while (i < 10) 
-		putchar("%d/n", i++);
+	int i;
+	int r = '\n';
+
+	for (i = 48; i <= 57; i++ ) 
+		putchar(i);
+
+	putchar(r);
 	return (0);
+}
