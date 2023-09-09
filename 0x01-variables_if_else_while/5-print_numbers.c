@@ -3,11 +3,15 @@
  * main - prints base 10 numbers strating from 0
  * Return: if success return 0
  */
-int main (void)
+int main(void)
 {
-	int i;
-	i = 0;
-	while (i < 10)
-		printf("%d\n", i++);
-	return(0);
+	char i;
+	char r = '\n';
+
+	for (i = 48; i <= 57; i++)
+	{
+		putchar(i);
+	}
+	putchar(r);
+	return (0);
 }

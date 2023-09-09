@@ -5,9 +5,12 @@
  */
 int main(void)
 {
-	int alphabet:
-		alphabet = "lower case except q and e";
-		putchar("%d", alphabet);
-		return (0);
+	char q;
+	char r = '\n';
+
+	for (q = 'a'; q <= 'z'; q++)
+		putchar(q);
+	putchar(r);
+	return (0);
 }
 
