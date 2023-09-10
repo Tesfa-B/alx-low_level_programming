@@ -7,18 +7,22 @@
 int main(void)
 {
 	int i;
-	int r = '\n';
-	const char *c = "";
-	
+	int c = ',';
+	int s = ' ';
+
 	for (i = 48; i <= 57; i++)
 	{
-		putchar(i);
-		putchar(c);
 		if (i == 57)
 		{
 			putchar(i);
 		}
+		else
+		{
+			putchar(i);
+			putchar(c);
+			putchar(s);
+		}
 	}
-	putchar(r);
+
 	return (0);
 }
