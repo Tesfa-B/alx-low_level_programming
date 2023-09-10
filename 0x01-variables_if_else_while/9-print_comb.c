@@ -7,22 +7,16 @@
 int main(void)
 {
 	int i;
-	int c = ',';
-	int s = ' ';
 
-	for (i = 48; i <= 57; i++)
+	for (i = 48; i < 58; i++)
 	{
-		if (i == 57)
+		putchar(i);
+		if (i < 57)
 		{
-			putchar(i);
-		}
-		else
-		{
-			putchar(i);
-			putchar(c);
-			putchar(s);
+			putchar(44);
+			putchar(32);
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
