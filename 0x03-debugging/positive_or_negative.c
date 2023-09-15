@@ -9,6 +9,7 @@
  * Return: If success return 0
  */
 int positive_or_negative()
+
 {
 	int n;
 
