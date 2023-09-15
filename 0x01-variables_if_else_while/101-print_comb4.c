@@ -5,7 +5,13 @@
  */
 int main(void)
 {
-	int 
-		putchar("%d",d);
+	int x;
+	
+	for (x = 0; x < 10; x++)
+		putchar(x + '0');
+	for (x = 50; x < 60; x++)
+		putchar(x + '0');
+
+	putchar(s);
 	return (0);
 }
