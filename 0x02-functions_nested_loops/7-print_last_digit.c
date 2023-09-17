@@ -1,5 +1,9 @@
 #include "main.h"
-int print_last_digit(int)
+
+int print_last_digit(int i)
 {
-	if (i[:
+	int last;	
+	last = (i % 10);
+		_putchar(i + 0);
+	return last;
 }
