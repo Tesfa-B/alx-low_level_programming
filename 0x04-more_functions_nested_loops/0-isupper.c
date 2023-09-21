@@ -6,7 +6,7 @@
  */
 int _isupper(int c)
 {
-	while (c <= 'A' || c <= 'Z')
+	while (c >= 65 || c <= 90)
 	{
 		return (1);
 	}
