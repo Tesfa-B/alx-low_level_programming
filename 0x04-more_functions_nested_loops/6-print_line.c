@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * print_line - prints underscore n numbers of time
+ * @n: the number _ to be printed.
+ */
 void print_line(int n)
 {
 	int i;
