@@ -1,26 +1,20 @@
 #include "main.h"
-
-int _strlen(char *s);
-
+/**
+ * _puts_recursion - prints recusively call its self again and again
+ * @*s: the value to be checked
+ * @s: the incremnted  value *s
+ * Return: if *s equals 0 return to calling function
+ */
 void _puts_recursion(char *s)
 {
-	int i = 0;
-	char ln = _strlen(s);
-       
-	for (i = s[0]; i < ln - 1; s++)
-	{
-		_putchar(s[0] + 0);
-	}
-	_putchar('\n');
-}
-int _strlen(char *s)
-{	
-	unsigned int len = 0;
 
-	while (s[len] != '\0')
+	if (*s == '\0')
 	{
+		_putchar('\n');
+		return;
+	}
+		_putchar(*s + 0);
 		s++;
-	}
-	return (s);
-}
+		_puts_recursion(s);
 
+}
