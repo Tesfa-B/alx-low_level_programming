@@ -2,5 +2,9 @@
 
 int is _prime_number(int n)
 {
-	i	
+	if (n ==  0)
+	{
+		return 0;
+	}
+	 return 
 }
