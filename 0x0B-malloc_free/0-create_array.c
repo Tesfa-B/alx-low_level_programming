@@ -1,21 +1,25 @@
 #include "main.h"
-
+/**
+ * *create_array - crates array by dynamically allocating
+ * @size: value of the size
+ * @c: value of the array
+ * arr: allocating memory size
+ * Return: returns the char pointer to the chunk if memory
+ */
 char *create_array(unsigned int size, char c)
 {
-	int *arr;
-	int i;
+	unsigned int i;
+
+	char *arr = malloc(sizeof(int) * size);
 
 	if (size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
-	
-	arr = malloc(sizeof(int) * size);
-	for (i = 0; i <= size - 1; i++)
-		arr[i] = c;
-
-	free(arr);
-	
-	return (0); 
+	else
+	{
+		for (i = 0; i < size; i++)
+			arr[i] = c;
+	}
+	return (arr);
 }
-
