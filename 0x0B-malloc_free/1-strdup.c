@@ -10,7 +10,9 @@ char *_strdup(char *str)
 		new = (int*) str;
 	}
 	else
+	{
 		return NULL;
+	}
 	free(new);
 	return (0);
 }
