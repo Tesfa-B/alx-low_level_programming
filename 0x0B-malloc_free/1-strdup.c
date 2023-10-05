@@ -1,18 +1,19 @@
 #include "main.h"
-
+/**
+ * _strdup - copies the value of parameter
+ * @str: the value of the string
+ * Return: if 0 return NULL else the pointer
+ */
 char *_strdup(char *str)
 {
-	int *new;
+	char *new;
 
-	if (str != NULL)
+	if (str == NULL)
 	{
-		new = malloc(sizeof(int));
-		new = (int*) str;
+		return (NULL);
 	}
-	else
-	{
-		return NULL;
-	}
+	new = malloc(sizeof(char));
+	new = str;
+	return (new);
 	free(new);
-	return (0);
 }
