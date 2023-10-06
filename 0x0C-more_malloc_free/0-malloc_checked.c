@@ -10,8 +10,7 @@ void *malloc_checked(unsigned int b)
 	*assign = b;
 
 	if (assign == NULL)
-		return ((void *) 98);
+		return(void*) (98);
 	return (assign);
-
+	free(assign);
 }
-
