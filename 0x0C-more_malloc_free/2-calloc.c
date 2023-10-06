@@ -8,9 +8,13 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *alloc = calloc(nmemb, sizeof(int));
+	int *alloc = malloc(sizeof(int));
+
+	alloc[0] = nmemb;
 
 	if (nmemb == 0 || size == 0)
+		return (NULL);
+	if (alloc == NULL)
 		return (NULL);
 	return (alloc);
 }
