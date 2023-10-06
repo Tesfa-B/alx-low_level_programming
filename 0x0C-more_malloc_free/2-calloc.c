@@ -9,8 +9,10 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *alloc = malloc(sizeof(int) * size);
+	int i;
 
-	alloc[0] = nmemb;
+	for (i = 0; i <= max; i++)
+		arr[i] = min++;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
