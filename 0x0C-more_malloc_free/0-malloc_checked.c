@@ -6,11 +6,12 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *assign = malloc(sizeof(unsigned int));
-	*assign = b;
+	void *assign;
+	       
+	assign = malloc(b);
 
-	if (assign == NULL && b == 0)
-		return ((void *) 98);
+	if (assign == NULL)
+		exit(98);
+	
 	return (assign);
-	free(assign);
 }
