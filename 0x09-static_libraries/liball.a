@@ -1,0 +1,174 @@
+!<arch>
+_abs.c/         0           0     0     644     40        `
+#include "main.h"
+
+int _abs(int n)
+{
+
+}
+_atoi.c/        0           0     0     644     43        `
+#include "main.h"
+
+int _atoi(char *s)
+{
+
+}
+
+_isalpha.c/     0           0     0     644     44        `
+#include "main.h"
+
+int _isalpha(int c)
+{
+
+}
+_isdigit.c/     0           0     0     644     45        `
+#include "main.h"
+
+int _isdigita(int c)
+{
+
+}
+
+_islower.c/     0           0     0     644     45        `
+#include "main.h"
+
+int _islower(int c)
+{
+
+}
+
+
+_isupper.c/     0           0     0     644     44        `
+#include "main.h"
+
+int _isupper(int c)
+{
+
+}
+_memcpy.c/      0           0     0     644     77        `
+#include "main.h"
+
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+
+}
+
+_memset.c/      0           0     0     644     71        `
+#include "main.h"
+
+char *_memset(char *s, char b, unsigned int n)
+{
+
+}
+
+_putchar.c/     0           0     0     644     315       `
+#include <unistd.h>
+
+/**
+ *  *  * _putchar - writes the character c to stdout
+ *   *   * @c: The character to print
+ *    *    *
+ *     *     * Return: On success 1.
+ *      *      * On error, -1 is returned, and errno is set appropriately.
+ *       *       */
+int _putchar(char c)
+{
+			return (write(1, &c, 1));
+}
+
+_puts.c/        0           0     0     644     114       `
+#include "main.h"
+
+void _puts(char *s)
+{
+	while (*s != '\0')
+	{
+		_putchar(*s + 0);
+		s++;
+	}
+	_putchar ('\n');
+}
+_strcat.c/      0           0     0     644     61        `
+#include "main.h"
+
+char *_strcat(char *dest, char *src)
+{
+
+}
+
+_strchr.c/      0           0     0     644     56        `
+#include "main.h"
+
+int *_strchar(char *s, char c)
+{	
+
+}
+_strcmp.c/      0           0     0     644     57        `
+#include "main.h"
+
+int  _strcmp(char *s1, char *s2)
+{
+
+}
+
+_strcpy.c/      0           0     0     644     62        `
+#include "main.h"
+
+char *_strcpy(char *dest, char *src)
+{
+
+}
+
+_strlen.c/      0           0     0     644     45        `
+#include "main.h"
+
+int _strlen(char *s)
+{
+
+}
+
+_strncat.c/     0           0     0     644     68        `
+#include "main.h"
+
+char *_strncat(char *dest,char *src, int n)
+{
+
+}
+_strncpy.c/     0           0     0     644     70        `
+#include "main.h"
+
+char *_strncpy(char *dest, char *src, int n)
+{
+
+}	
+_strpbrk.c/     0           0     0     644     62        `
+#include "main.h"
+
+char *_strpbrk(char *s, char *accept)
+{
+
+}
+_strspn.c/      0           0     0     644     67        `
+#include "main.h"
+
+unsigned int _strspn(char *s,char *accept)
+{
+
+}
+
+_strstr.c/      0           0     0     644     69        `
+#include "main.h"
+
+char *_strstr(char *haystack, char *needle)
+{
+	
+}
+
+main.c/         0           0     0     644     154       `
+#include "main.h"
+
+int main(void)
+{
+	    _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+	        return (0);
+}
