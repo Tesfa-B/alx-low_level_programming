@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _isdigita(int c)
+int _isdigit(int c)
 {
 
 }
