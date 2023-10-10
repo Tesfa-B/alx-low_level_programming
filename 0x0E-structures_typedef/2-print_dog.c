@@ -11,15 +11,15 @@ void print_dog(struct dog *d)
 	{
 		return;
 	}
-	if (d->age == 0)
+	if (d->age == NULL)
 	{
 		d->name = "(nil)";
 	}
-	if (d->owner == 0)
+	if (d->owner == NULL)
 	{
 		d->owner = "(nil)";
 	}
-	if (d->name == 0)
+	if (d->name == NULL)
 	{
 		d->name = "(nil)";
 	}
