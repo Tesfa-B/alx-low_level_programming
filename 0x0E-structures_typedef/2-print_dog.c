@@ -7,15 +7,14 @@
  */
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
-	{
+	if (d == 0){
 		return;
-	}
-	if (d->name == NULL)
+
+	if (d->name == 0)
 	{
 		d->name = "(nil)";
 	}
-	if (d->owner == NULL)
+	if (d->owner == 0)
 	{
 		d->owner = "(nil)";
 	}
