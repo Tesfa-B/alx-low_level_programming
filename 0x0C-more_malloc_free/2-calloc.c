@@ -8,13 +8,14 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *alloc = malloc(sizeof(int) * size);
-
 	if (nmemb == 0 || size == 0)
 		return (NULL);
+	char *alloc = malloc(nmemb * size);
+
 	if (alloc == NULL)
 		return (NULL);
-	_memset(alloc, 0, (sizeof(int) * size);
+	_memset(alloc, 0, (sizeof(int) * size));
+
 	return (alloc);
 	free(0);
 }
