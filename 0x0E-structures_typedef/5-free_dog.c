@@ -1,4 +1,4 @@
-#include "dog.c"
+#include "dog.h"
 #include "stdio.h"
 /**
  * free_dog - frees allocated memories
