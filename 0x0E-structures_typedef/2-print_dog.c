@@ -4,7 +4,6 @@
  * print_dog - print the information of the dog
  * @struct dog -  a structure that stores information about dog
  * @d: a of dog structure
- *
  */
 void print_dog(struct dog *d)
 {
@@ -14,9 +13,9 @@ void print_dog(struct dog *d)
 	}
 	if (d->owner == 0)
 	{
-		printf("(nil)");
+		printf("Owner(nil)");
 	}
-	if (*d->name == 0)
+	if (d->name == 0)
 	{
 		printf("Name: (nil)");
 	}
