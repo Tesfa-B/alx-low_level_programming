@@ -2,22 +2,14 @@
 
 void print_rev(char *s)
 {
-	int len = 0;
-	char temp;
-	int i;
-	char p = *s:
-
-
-	while (p[len] != '\0')
+	int p = 0;
+	while (s[p] != '\0')
 	{
-	len++;
-	}
-		for (i = 0; i < len / 2; i++)
+		s++;
+		if (s[p] == '\0')
 		{
-			temp = p[i];
-			p[i] = p[len - i - 1];
-			p[len - i - 1] = temp;
-			_putchar(p);
+		_putchar(*s);
+		s--;
 		}
-	_putchar('\n');
+	}
 }
