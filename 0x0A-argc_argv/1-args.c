@@ -1,14 +1,15 @@
 #include "main.h"
-#include <stdlib.h>
-
-int main(int argc, char* argv[])
+/**
+ * main - prints the number of argument
+ * @argc: number of argumnent
+ * @argv: array of the argument
+ * Return: if success return 0;
+ */
+int main(int argc, char *argv[])
 {
-	int j = argc;
+	int j = argc - 1;
 
-		_putchar(0);
-	}
-	_putchar(j + '0');
-	_putchar('\n');
-	
-	return(0);
+	printf("%d \n", j);
+	(void) argv;
+	return (0);
 }
