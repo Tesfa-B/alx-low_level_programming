@@ -1,17 +1,17 @@
 #include "main.h"
-#include <stdlib.h>
-
-int main(int argc ,char *argv[])
+/**
+ * main - prints argument
+ * @argc: counts number of argument
+ * @argv: value of the argument
+ * Return: if success return 0;
+ */
+int main(int argc, char *argv[])
 {
 	int i;
-	int j;
 
 	for (i = 0; i < argc; i++)
-		for (j = 0; j == '\0') 
-		{
-	       		_putchar(*argv[i]);
-		}
-	_putchar('\n');
+	{
+		printf("%s\n ", argv[i]);
+	}
 	return (0);
 
-}
