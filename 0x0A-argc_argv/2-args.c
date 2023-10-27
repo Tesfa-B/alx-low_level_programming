@@ -3,7 +3,7 @@
  * main - prints all given argument followed by new line
  * @argc: number of argument
  * @argv: array of string
- * Return: if success return 0
+ * Return: if success return i0
  */
 int main(int argc, char *argv[])
 {
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		printf("%s \n", argv[i]);
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }
