@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 {
 	int i, mul = 1;
 
-	if (argc > 3)
+	if (argc > 3 || argc >= 1)
 	{
-		printf("Erorr\n");
+		printf("Error\n");
 		return (1);
 	}
 	if (argc > 1)
