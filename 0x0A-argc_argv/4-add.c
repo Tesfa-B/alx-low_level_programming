@@ -10,12 +10,12 @@ int main(int argc, char *argv[])
 {
 	int j, add = 0;
 
-	if (argc > 2)
+	if (argc > 1)
 	{
 
 		for (j = 1; j < argc; j++)
 		{
-			if (*argv[j] >= 48 && *argv[j] >= 57)
+			if (*argv[j] >= 48 && *argv[j] <= 57)
 			{
 				add = add + atoi(argv[j]);
 			}
