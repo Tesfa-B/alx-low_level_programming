@@ -1,4 +1,5 @@
 #include "main.h"
+#include "ctype.h"
 /**
  * main - prints the sum of the given numbers
  * @argc: number of arguments
@@ -8,21 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int j, add = 0;
+	int j, add = 0, i;
 
-	if (argc > 1)
+	if (argc > 2)
 	{
 
 		for (j = 1; j < argc; j++)
 		{
-			if (*argv[j] >= 48 && *argv[j] <= 57)
+			for (i = 0; argv[j][i] != '\0'; i++)
 			{
+				if (!isdigit(argv[j][i]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 				add = add + atoi(argv[j]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
 			}
 		}
 		printf("%d\n", add);
