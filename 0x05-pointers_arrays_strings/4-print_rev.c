@@ -2,14 +2,15 @@
 
 void print_rev(char *s)
 {
-	int p = 0;
-	while (s[p] != '\0')
+	int i;
+
+ 	for (i = 0; *s != '\0'; i++)
 	{
 		s++;
-		if (s[p] == '\0')
+		if (*s == '\0')
 		{
-		_putchar(*s);
-		s--;
+			--s;
 		}
 	}
+	_putchar('\n');
 }
