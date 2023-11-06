@@ -1,1 +1,1 @@
-This for Struct typedef tasks.
+This for all struct and typedef tasks.

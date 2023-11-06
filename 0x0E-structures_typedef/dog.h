@@ -1,16 +1,21 @@
 #ifndef _DOG_H_
 #define _DOG_H_
+
+#include <stdlib.h>
 /**
- * struct dog - type structure stores name,age,owner of dog
- * @name: name of the dog
- * @age: age
- * @owner: name the owner
+ * struct dog - Details for  Dog
+ * @name: name fot the dog
+ * @age:  name for the dog
+ * @owner: owner of dog
  */
 typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-} dog;
+} dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+void free_dog(dog_t *d);
 
 #endif
