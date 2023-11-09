@@ -23,5 +23,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%c ", x);
 	}
 		putchar('\n);
-		va_end(aj);
+	for (i = 0; i < n; i++)
+	{
+		m = va_arg(aj, int);
+		printf("%d", m);
+		if (x != '\0' && i = (n - 1))
+			printf("%c ", x);
+	}
+	_putchar('\n');
+
+	va_end(aj);
 }
