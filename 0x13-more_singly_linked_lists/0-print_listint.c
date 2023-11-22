@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
- * print_listint - prints the s elemnts of the passed struct
+ * print_listint - prints the elements of the passed struct
  * @h: struct
  * Return: number of elements in the struct
  */
