@@ -10,8 +10,9 @@ listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *firstnode;
 
+	if (head == NULL)
+		return (NULL);
 	firstnode = malloc(sizeof(listint_t));
-
 	if (firstnode == NULL)
 		return (NULL);
 
