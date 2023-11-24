@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 	int decival = 1;
 	int i;
 
-	if (b == '\0')
+	if (*b == '\0')
 		return (0);
 	for (i = (len - 1); i >= 0; i--)
 	{
