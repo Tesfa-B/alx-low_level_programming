@@ -1,14 +1,33 @@
 #include "main.h"
-
-void puts2(char *str);
+/**
+ * puts2 - prints every other charactrer
+ * @str: string
+ */
+void puts2(char *str)
 {
-	int i;
-	char n = *str;
-	len = :
+	int i = 0;
+	int j = _strlen(str);
 
-	for (n[i]; i < len - 1; i++)
+	while (j > i)
 	{
-		_putchar(n[i] + 2);
+		_putchar(str[i]);
+		i = i + 2;
 	}
 	_putchar('\n');
+}
+/**
+ * _strlen - calculates string length
+ * @str: string
+ * Return: string length
+ */
+int _strlen(char *str)
+{
+	int i = 0;
+
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
 }
